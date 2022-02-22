@@ -1,0 +1,302 @@
+{
+    "sourceFile": "App.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 71,
+            "patches": [
+                {
+                    "date": 1645348009568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1645348024798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n import React from \"react\"\n import { View } from \"react-native\"\n \n-const App=()=>{\n-  return(\n-<View style={{backgroundColor: \"red\"}}>\n+const App = () => {\n+  return (\n+    <View style={{ backgroundColor: \"red\" }}>\n \n-</View>\n+    </View>\n   )\n }\n export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645348308844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import { View } from \"react-native\"\n \n const App = () => {\n   return (\n-    <View style={{ backgroundColor: \"red\" }}>\n+    <View style={{ backgroundColor: \"red\" , flex: 1}}>\n \n     </View>\n   )\n }\n"
+                },
+                {
+                    "date": 1645348818039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,20 @@\n-import React from \"react\"\n-import { View } from \"react-native\"\n+import React, { useRef } from \"react\"\n+import { TouchableOpacity, View , Image} from \"react-native\"\n+import { RNCamera } from 'react-native-camera'\n \n const App = () => {\n+  const camera = useRef()\n+\n+\n+\n+\n+\n   return (\n-    <View style={{ backgroundColor: \"red\" , flex: 1}}>\n-\n+    <View style={{ backgroundColor: \"red\", flex: 1 }}>\n+     <TouchableOpacity>\n+      <Image />\n+     </TouchableOpacity>\n     </View>\n   )\n }\n export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645348901556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n import React, { useRef } from \"react\"\n import { TouchableOpacity, View , Image} from \"react-native\"\n import { RNCamera } from 'react-native-camera'\n+import Icon from 'react-native-vector-icons/FontAwesome';\n \n const App = () => {\n   const camera = useRef()\n \n@@ -11,9 +12,9 @@\n \n   return (\n     <View style={{ backgroundColor: \"red\", flex: 1 }}>\n      <TouchableOpacity>\n-      <Image />\n+      <Icon name=\"camera-retro\" />\n      </TouchableOpacity>\n     </View>\n   )\n }\n"
+                },
+                {
+                    "date": 1645348987869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n \n   return (\n     <View style={{ backgroundColor: \"red\", flex: 1 }}>\n      <TouchableOpacity>\n-      <Icon name=\"camera-retro\" />\n+      <Icon size={30} name=\"camera-retro\" />\n      </TouchableOpacity>\n     </View>\n   )\n }\n"
+                },
+                {
+                    "date": 1645349009622,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n \n   return (\n     <View style={{ backgroundColor: \"red\", flex: 1 }}>\n      <TouchableOpacity>\n-      <Icon size={30} name=\"camera-retro\" />\n+      <Icon.Button size={40} name=\"camera-retro\" />\n      </TouchableOpacity>\n     </View>\n   )\n }\n"
+                },
+                {
+                    "date": 1645349044735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n \n   return (\n     <View style={{ backgroundColor: \"red\", flex: 1 }}>\n      <TouchableOpacity>\n-      <Icon.Button size={40} name=\"camera-retro\" />\n+      <Icon.Button size={40} name=\"video-camera\" />\n      </TouchableOpacity>\n     </View>\n   )\n }\n"
+                },
+                {
+                    "date": 1645349131064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React, { useRef } from \"react\"\n import { TouchableOpacity, View , Image} from \"react-native\"\n import { RNCamera } from 'react-native-camera'\n-import Icon from 'react-native-vector-icons/FontAwesome';\n+import Icon from 'react-native-vector-icons/FontAwesome5';\n \n const App = () => {\n   const camera = useRef()\n \n@@ -12,9 +12,10 @@\n \n   return (\n     <View style={{ backgroundColor: \"red\", flex: 1 }}>\n      <TouchableOpacity>\n-      <Icon.Button size={40} name=\"video-camera\" />\n+      <Icon size={40} name=\"camera-retro\" />\n+      \n      </TouchableOpacity>\n     </View>\n   )\n }\n"
+                },
+                {
+                    "date": 1645349249816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React, { useRef } from \"react\"\n import { TouchableOpacity, View , Image} from \"react-native\"\n import { RNCamera } from 'react-native-camera'\n-import Icon from 'react-native-vector-icons/FontAwesome5';\n+import Icon from 'react-native-vector-icons/AntDesign';\n \n const App = () => {\n   const camera = useRef()\n \n@@ -12,9 +12,9 @@\n \n   return (\n     <View style={{ backgroundColor: \"red\", flex: 1 }}>\n      <TouchableOpacity>\n-      <Icon size={40} name=\"camera-retro\" />\n+      <Icon size={40} name=\"camera\" />\n       \n      </TouchableOpacity>\n     </View>\n   )\n"
+                },
+                {
+                    "date": 1645349256645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n \n   return (\n     <View style={{ backgroundColor: \"red\", flex: 1 }}>\n      <TouchableOpacity>\n-      <Icon size={40} name=\"camera\" />\n+      <Icon size={40} name=\"camera\" color={'yellow'}/>\n       \n      </TouchableOpacity>\n     </View>\n   )\n"
+                },
+                {
+                    "date": 1645349303319,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n \n \n \n   return (\n-    <View style={{ backgroundColor: \"red\", flex: 1 }}>\n+    <View style={{ backgroundColor: \"red\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n      <TouchableOpacity>\n       <Icon size={40} name=\"camera\" color={'yellow'}/>\n       \n      </TouchableOpacity>\n"
+                },
+                {
+                    "date": 1645350123822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,22 +1,28 @@\n-import React, { useRef } from \"react\"\n-import { TouchableOpacity, View , Image} from \"react-native\"\n+import React, { useRef, useState } from \"react\"\n+import { TouchableOpacity, View, Image, Modal } from \"react-native\"\n import { RNCamera } from 'react-native-camera'\n import Icon from 'react-native-vector-icons/AntDesign';\n \n const App = () => {\n-  const camera = useRef()\n+  const camera = useRef(null)\n+  const [modalVisible, setModalVisible] = useState(false)\n+  const takePhoto = () => {\n+    setModalVisible(!setModalVisible)\n+  }\n \n \n \n \n-\n   return (\n     <View style={{ backgroundColor: \"red\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n-     <TouchableOpacity>\n-      <Icon size={40} name=\"camera\" color={'yellow'}/>\n-      \n-     </TouchableOpacity>\n+      <Modal visible={modalVisible} >\n+        <TouchableOpacity onPress={takePhoto}>\n+          <Icon size={40} name=\"camera\" color={'yellow'} />\n+\n+        </TouchableOpacity>\n+      </Modal>\n+\n     </View>\n   )\n }\n export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645350136139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import Icon from 'react-native-vector-icons/AntDesign';\n \n const App = () => {\n   const camera = useRef(null)\n-  const [modalVisible, setModalVisible] = useState(false)\n+  const [modalVisible, setModalVisible] = useState(true)\n   const takePhoto = () => {\n     setModalVisible(!setModalVisible)\n   }\n \n"
+                },
+                {
+                    "date": 1645350180326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import Icon from 'react-native-vector-icons/AntDesign';\n \n const App = () => {\n   const camera = useRef(null)\n-  const [modalVisible, setModalVisible] = useState(true)\n+  const [modalVisible, setModalVisible] = useState(false)\n   const takePhoto = () => {\n     setModalVisible(!setModalVisible)\n   }\n \n@@ -14,13 +14,15 @@\n \n \n   return (\n     <View style={{ backgroundColor: \"red\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n+\n+      <TouchableOpacity onPress={takePhoto}>\n+        <Icon size={40} name=\"camera\" color={'yellow'} />\n+\n+      </TouchableOpacity>\n       <Modal visible={modalVisible} >\n-        <TouchableOpacity onPress={takePhoto}>\n-          <Icon size={40} name=\"camera\" color={'yellow'} />\n-\n-        </TouchableOpacity>\n+        \n       </Modal>\n \n     </View>\n   )\n"
+                },
+                {
+                    "date": 1645350209700,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React, { useRef, useState } from \"react\"\n-import { TouchableOpacity, View, Image, Modal } from \"react-native\"\n+import { TouchableOpacity, View, Image, Modal, Text } from \"react-native\"\n import { RNCamera } from 'react-native-camera'\n import Icon from 'react-native-vector-icons/AntDesign';\n \n const App = () => {\n@@ -20,9 +20,9 @@\n         <Icon size={40} name=\"camera\" color={'yellow'} />\n \n       </TouchableOpacity>\n       <Modal visible={modalVisible} >\n-        \n+        <Text>11111111</Text>\n       </Modal>\n \n     </View>\n   )\n"
+                },
+                {
+                    "date": 1645350271452,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n       <TouchableOpacity onPress={takePhoto}>\n         <Icon size={40} name=\"camera\" color={'yellow'} />\n \n       </TouchableOpacity>\n-      <Modal visible={modalVisible} >\n+      <Modal visible={modalVisible} style={{backgroundColor: \"yellow\"}}>\n         <Text>11111111</Text>\n       </Modal>\n \n     </View>\n"
+                },
+                {
+                    "date": 1645350288699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n       <TouchableOpacity onPress={takePhoto}>\n         <Icon size={40} name=\"camera\" color={'yellow'} />\n \n       </TouchableOpacity>\n-      <Modal visible={modalVisible} style={{backgroundColor: \"yellow\"}}>\n+      <Modal visible={modalVisible} style={{backgroundColor: \"yellow\", flex: 1}}>\n         <Text>11111111</Text>\n       </Modal>\n \n     </View>\n"
+                },
+                {
+                    "date": 1645350313822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,14 +15,14 @@\n \n   return (\n     <View style={{ backgroundColor: \"red\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n \n+      \n+      <Modal visible={modalVisible} style={{backgroundColor: \"yellow\", flex: 1}}>\n       <TouchableOpacity onPress={takePhoto}>\n         <Icon size={40} name=\"camera\" color={'yellow'} />\n \n       </TouchableOpacity>\n-      <Modal visible={modalVisible} style={{backgroundColor: \"yellow\", flex: 1}}>\n-        <Text>11111111</Text>\n       </Modal>\n \n     </View>\n   )\n"
+                },
+                {
+                    "date": 1645350324431,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import Icon from 'react-native-vector-icons/AntDesign';\n \n const App = () => {\n   const camera = useRef(null)\n-  const [modalVisible, setModalVisible] = useState(false)\n+  const [modalVisible, setModalVisible] = useState(true)\n   const takePhoto = () => {\n     setModalVisible(!setModalVisible)\n   }\n \n"
+                },
+                {
+                    "date": 1645350359105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n   return (\n     <View style={{ backgroundColor: \"red\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n \n       \n-      <Modal visible={modalVisible} style={{backgroundColor: \"yellow\", flex: 1}}>\n+      <Modal visible={modalVisible} style={{backgroundColor: \"yellow\", flex: 1, alignItems: 'center', justifyContent: 'center'}}>\n       <TouchableOpacity onPress={takePhoto}>\n         <Icon size={40} name=\"camera\" color={'yellow'} />\n \n       </TouchableOpacity>\n"
+                },
+                {
+                    "date": 1645350390458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,8 @@\n \n   return (\n     <View style={{ backgroundColor: \"red\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n \n-      \n       <Modal visible={modalVisible} style={{backgroundColor: \"yellow\", flex: 1, alignItems: 'center', justifyContent: 'center'}}>\n       <TouchableOpacity onPress={takePhoto}>\n         <Icon size={40} name=\"camera\" color={'yellow'} />\n \n"
+                },
+                {
+                    "date": 1645350475640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,10 +14,11 @@\n \n \n   return (\n     <View style={{ backgroundColor: \"red\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n-\n-      <Modal visible={modalVisible} style={{backgroundColor: \"yellow\", flex: 1, alignItems: 'center', justifyContent: 'center'}}>\n+      <Modal visible={modalVisible} \n+      transparent={true}\n+      style={{backgroundColor: \"yellow\", flex: 1, alignItems: 'center', justifyContent: 'center'}}>\n       <TouchableOpacity onPress={takePhoto}>\n         <Icon size={40} name=\"camera\" color={'yellow'} />\n \n       </TouchableOpacity>\n"
+                },
+                {
+                    "date": 1645350583911,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,25 +4,27 @@\n import Icon from 'react-native-vector-icons/AntDesign';\n \n const App = () => {\n   const camera = useRef(null)\n-  const [modalVisible, setModalVisible] = useState(true)\n+  const [modalTakeVisible, setModalTakeVisible] = useState(true)\n+  const[]\n   const takePhoto = () => {\n-    setModalVisible(!setModalVisible)\n+    setModalTakeVisible(!modalTakeVisible)\n+    \n   }\n \n \n \n \n   return (\n     <View style={{ backgroundColor: \"red\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n-      <Modal visible={modalVisible} \n-      transparent={true}\n-      style={{backgroundColor: \"yellow\", flex: 1, alignItems: 'center', justifyContent: 'center'}}>\n-      <TouchableOpacity onPress={takePhoto}>\n-        <Icon size={40} name=\"camera\" color={'yellow'} />\n+      <Modal visible={modalTakeVisible}\n+        transparent={true}\n+        style={{ backgroundColor: \"yellow\", flex: 1, alignItems: 'center', justifyContent: 'center' }}>\n+        <TouchableOpacity onPress={takePhoto}>\n+          <Icon size={40} name=\"camera\" color={'yellow'} />\n \n-      </TouchableOpacity>\n+        </TouchableOpacity>\n       </Modal>\n \n     </View>\n   )\n"
+                },
+                {
+                    "date": 1645350840913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,12 +5,12 @@\n \n const App = () => {\n   const camera = useRef(null)\n   const [modalTakeVisible, setModalTakeVisible] = useState(true)\n-  const[]\n+  const[modalCamera, setModalCamera]=useState(false)\n   const takePhoto = () => {\n     setModalTakeVisible(!modalTakeVisible)\n-    \n+    setModalCamera(true)\n   }\n \n \n \n@@ -21,12 +21,11 @@\n         transparent={true}\n         style={{ backgroundColor: \"yellow\", flex: 1, alignItems: 'center', justifyContent: 'center' }}>\n         <TouchableOpacity onPress={takePhoto}>\n           <Icon size={40} name=\"camera\" color={'yellow'} />\n-\n         </TouchableOpacity>\n       </Modal>\n-\n+       \n     </View>\n   )\n }\n export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645353564865,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,21 +1,20 @@\n import React, { useRef, useState } from \"react\"\n import { TouchableOpacity, View, Image, Modal, Text } from \"react-native\"\n-import { RNCamera } from 'react-native-camera'\n+\n import Icon from 'react-native-vector-icons/AntDesign';\n+import ModalComponent from \"./ModalComponent\";\n \n const App = () => {\n-  const camera = useRef(null)\n+ \n   const [modalTakeVisible, setModalTakeVisible] = useState(true)\n-  const[modalCamera, setModalCamera]=useState(false)\n+  const [modalCamera, setModalCamera] = useState(false)\n+  \n   const takePhoto = () => {\n     setModalTakeVisible(!modalTakeVisible)\n     setModalCamera(true)\n   }\n \n-\n-\n-\n   return (\n     <View style={{ backgroundColor: \"red\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n       <Modal visible={modalTakeVisible}\n         transparent={true}\n@@ -23,9 +22,11 @@\n         <TouchableOpacity onPress={takePhoto}>\n           <Icon size={40} name=\"camera\" color={'yellow'} />\n         </TouchableOpacity>\n       </Modal>\n-       \n+      <Modal visible={modalCamera} >\n+        <ModalComponent ref={camera} />\n+      </Modal>\n     </View>\n   )\n }\n export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645353578644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n           <Icon size={40} name=\"camera\" color={'yellow'} />\n         </TouchableOpacity>\n       </Modal>\n       <Modal visible={modalCamera} >\n-        <ModalComponent ref={camera} />\n+        <ModalComponent  />\n       </Modal>\n     </View>\n   )\n }\n"
+                },
+                {
+                    "date": 1645354620961,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,15 +4,17 @@\n import Icon from 'react-native-vector-icons/AntDesign';\n import ModalComponent from \"./ModalComponent\";\n \n const App = () => {\n- \n+  const clickRef = useRef()\n   const [modalTakeVisible, setModalTakeVisible] = useState(true)\n   const [modalCamera, setModalCamera] = useState(false)\n-  \n+\n   const takePhoto = () => {\n     setModalTakeVisible(!modalTakeVisible)\n     setModalCamera(true)\n+    clickRef.current.takePicture()\n+\n   }\n \n   return (\n     <View style={{ backgroundColor: \"red\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n@@ -23,9 +25,9 @@\n           <Icon size={40} name=\"camera\" color={'yellow'} />\n         </TouchableOpacity>\n       </Modal>\n       <Modal visible={modalCamera} >\n-        <ModalComponent  />\n+        <ModalComponent ref={clickRef} />\n       </Modal>\n     </View>\n   )\n }\n"
+                },
+                {
+                    "date": 1645355644924,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n           <Icon size={40} name=\"camera\" color={'yellow'} />\n         </TouchableOpacity>\n       </Modal>\n       <Modal visible={modalCamera} >\n-        <ModalComponent ref={clickRef} />\n+        <ModalComponent  />\n       </Modal>\n     </View>\n   )\n }\n"
+                },
+                {
+                    "date": 1645361013199,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,18 +17,18 @@\n   }\n \n   return (\n     <View style={{ backgroundColor: \"red\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n-      <Modal visible={modalTakeVisible}\n+      {/* <Modal visible={modalTakeVisible}\n         transparent={true}\n         style={{ backgroundColor: \"yellow\", flex: 1, alignItems: 'center', justifyContent: 'center' }}>\n         <TouchableOpacity onPress={takePhoto}>\n           <Icon size={40} name=\"camera\" color={'yellow'} />\n         </TouchableOpacity>\n       </Modal>\n       <Modal visible={modalCamera} >\n         <ModalComponent  />\n-      </Modal>\n+      </Modal> */}\n     </View>\n   )\n }\n export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645361030262,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,10 +25,11 @@\n           <Icon size={40} name=\"camera\" color={'yellow'} />\n         </TouchableOpacity>\n       </Modal>\n       <Modal visible={modalCamera} >\n-        <ModalComponent  />\n+       \n       </Modal> */}\n+       <ModalComponent  />\n     </View>\n   )\n }\n export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645361049295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,8 @@\n \n   const takePhoto = () => {\n     setModalTakeVisible(!modalTakeVisible)\n     setModalCamera(true)\n-    clickRef.current.takePicture()\n \n   }\n \n   return (\n"
+                },
+                {
+                    "date": 1645361380332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,19 +16,10 @@\n   }\n \n   return (\n     <View style={{ backgroundColor: \"red\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n-      {/* <Modal visible={modalTakeVisible}\n-        transparent={true}\n-        style={{ backgroundColor: \"yellow\", flex: 1, alignItems: 'center', justifyContent: 'center' }}>\n-        <TouchableOpacity onPress={takePhoto}>\n-          <Icon size={40} name=\"camera\" color={'yellow'} />\n-        </TouchableOpacity>\n-      </Modal>\n-      <Modal visible={modalCamera} >\n-       \n-      </Modal> */}\n-       <ModalComponent  />\n+      <Image />\n+      <ModalComponent  />\n     </View>\n   )\n }\n export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645361397344,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React, { useRef, useState } from \"react\"\n-import { TouchableOpacity, View, Image, Modal, Text } from \"react-native\"\n+import { TouchableOpacity, View, Image, Modal, Text, Button } from \"react-native\"\n \n import Icon from 'react-native-vector-icons/AntDesign';\n import ModalComponent from \"./ModalComponent\";\n \n@@ -17,8 +17,9 @@\n \n   return (\n     <View style={{ backgroundColor: \"red\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n       <Image />\n+      <Button>Chup anh</Button>\n       <ModalComponent  />\n     </View>\n   )\n }\n"
+                },
+                {
+                    "date": 1645361471254,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,8 @@\n \n   const takePhoto = () => {\n     setModalTakeVisible(!modalTakeVisible)\n     setModalCamera(true)\n-\n   }\n \n   return (\n     <View style={{ backgroundColor: \"red\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n"
+                },
+                {
+                    "date": 1645362728183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,10 +16,12 @@\n \n   return (\n     <View style={{ backgroundColor: \"red\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n       <Image />\n-      <Button>Chup anh</Button>\n-      <ModalComponent  />\n+      <TouchableOpacity>\n+         <Icon name=\"camera\" size={50} color={\"red\"}/>\n+      </TouchableOpacity>\n+      <ModalComponent />\n     </View>\n   )\n }\n export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645362990945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import React, { useRef, useState } from \"react\"\n import { TouchableOpacity, View, Image, Modal, Text, Button } from \"react-native\"\n \n-import Icon from 'react-native-vector-icons/AntDesign';\n+import Icon from 'react-native-vector-icons/MaterialIcons';\n import ModalComponent from \"./ModalComponent\";\n \n const App = () => {\n   const clickRef = useRef()\n"
+                },
+                {
+                    "date": 1645363056805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n   return (\n     <View style={{ backgroundColor: \"red\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n       <Image />\n       <TouchableOpacity>\n-         <Icon name=\"camera\" size={50} color={\"red\"}/>\n+         <Icon name=\"camera-alt\" size={50} color={\"red\"}/>\n       </TouchableOpacity>\n       <ModalComponent />\n     </View>\n   )\n"
+                },
+                {
+                    "date": 1645363073348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import React, { useRef, useState } from \"react\"\n-import { TouchableOpacity, View, Image, Modal, Text, Button } from \"react-native\"\n+import { TouchableOpacity, View, Image } from \"react-native\"\n \n import Icon from 'react-native-vector-icons/MaterialIcons';\n import ModalComponent from \"./ModalComponent\";\n \n"
+                },
+                {
+                    "date": 1645365915857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,24 +4,24 @@\n import Icon from 'react-native-vector-icons/MaterialIcons';\n import ModalComponent from \"./ModalComponent\";\n \n const App = () => {\n-  const clickRef = useRef()\n-  const [modalTakeVisible, setModalTakeVisible] = useState(true)\n-  const [modalCamera, setModalCamera] = useState(false)\n+  const [visible, setVisible] = useState(false)\n+  const modalRef = useRef()\n+  const pressBtn = () => {\n \n-  const takePhoto = () => {\n-    setModalTakeVisible(!modalTakeVisible)\n-    setModalCamera(true)\n   }\n \n+\n+\n+\n   return (\n     <View style={{ backgroundColor: \"red\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n       <Image />\n-      <TouchableOpacity>\n-         <Icon name=\"camera-alt\" size={50} color={\"red\"}/>\n+      <TouchableOpacity onPress={pressBtn}>\n+        <Icon name=\"camera-alt\" size={50} color={\"red\"} />\n       </TouchableOpacity>\n-      <ModalComponent />\n+      <ModalComponent visible={visible = true} />\n     </View>\n   )\n }\n export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645365931102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n       <Image />\n       <TouchableOpacity onPress={pressBtn}>\n         <Icon name=\"camera-alt\" size={50} color={\"red\"} />\n       </TouchableOpacity>\n-      <ModalComponent visible={visible = true} />\n+      <ModalComponent visible={visible} />\n     </View>\n   )\n }\n export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645366025056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n const App = () => {\n   const [visible, setVisible] = useState(false)\n   const modalRef = useRef()\n   const pressBtn = () => {\n-\n+   setVisible(true)\n   }\n \n \n \n"
+                },
+                {
+                    "date": 1645366908009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,12 +4,12 @@\n import Icon from 'react-native-vector-icons/MaterialIcons';\n import ModalComponent from \"./ModalComponent\";\n \n const App = () => {\n-  const [visible, setVisible] = useState(false)\n+  \n   const modalRef = useRef()\n   const pressBtn = () => {\n-   setVisible(true)\n+    modalRef.current.setVisible(true)\n   }\n \n \n \n@@ -19,9 +19,9 @@\n       <Image />\n       <TouchableOpacity onPress={pressBtn}>\n         <Icon name=\"camera-alt\" size={50} color={\"red\"} />\n       </TouchableOpacity>\n-      <ModalComponent visible={visible} />\n+      <ModalComponent  ref={modalRef}/>\n     </View>\n   )\n }\n export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645366968889,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n \n \n \n   return (\n-    <View style={{ backgroundColor: \"red\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n+    <View style={{ backgroundColor: \"yellow\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n       <Image />\n       <TouchableOpacity onPress={pressBtn}>\n         <Icon name=\"camera-alt\" size={50} color={\"red\"} />\n       </TouchableOpacity>\n"
+                },
+                {
+                    "date": 1645367052311,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n import ModalComponent from \"./ModalComponent\";\n \n const App = () => {\n   \n+\n   const modalRef = useRef()\n   const pressBtn = () => {\n     modalRef.current.setVisible(true)\n   }\n@@ -15,9 +16,9 @@\n \n \n   return (\n     <View style={{ backgroundColor: \"yellow\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n-      <Image />\n+      <Image source={{uri:modalRef.current.image}}/>\n       <TouchableOpacity onPress={pressBtn}>\n         <Icon name=\"camera-alt\" size={50} color={\"red\"} />\n       </TouchableOpacity>\n       <ModalComponent  ref={modalRef}/>\n"
+                },
+                {
+                    "date": 1645367567112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,24 +5,25 @@\n import ModalComponent from \"./ModalComponent\";\n \n const App = () => {\n   \n-\n+  const [image, setImage] = useState(null)\n   const modalRef = useRef()\n   const pressBtn = () => {\n-    modalRef.current.setVisible(true)\n+    modalRef.current.onVisible()\n   }\n-\n-\n-\n-\n+  const setImageLink=()=>{\n+    setImage()\n+  }\n   return (\n     <View style={{ backgroundColor: \"yellow\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n-      <Image source={{uri:modalRef.current.image}}/>\n+      <Image source={{uri:image}}/>\n       <TouchableOpacity onPress={pressBtn}>\n         <Icon name=\"camera-alt\" size={50} color={\"red\"} />\n       </TouchableOpacity>\n-      <ModalComponent  ref={modalRef}/>\n+      <ModalComponent \n+      ref={modalRef}\n+      imageLink={setImageLink}/>\n     </View>\n   )\n }\n export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645368128478,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,26 +4,26 @@\n import Icon from 'react-native-vector-icons/MaterialIcons';\n import ModalComponent from \"./ModalComponent\";\n \n const App = () => {\n-  \n+\n   const [image, setImage] = useState(null)\n   const modalRef = useRef()\n   const pressBtn = () => {\n     modalRef.current.onVisible()\n   }\n-  const setImageLink=()=>{\n+  const setImageLink = () => {\n     setImage()\n   }\n   return (\n     <View style={{ backgroundColor: \"yellow\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n-      <Image source={{uri:image}}/>\n+      <Image source={{ uri: image }} />\n       <TouchableOpacity onPress={pressBtn}>\n         <Icon name=\"camera-alt\" size={50} color={\"red\"} />\n       </TouchableOpacity>\n-      <ModalComponent \n-      ref={modalRef}\n-      imageLink={setImageLink}/>\n+      <ModalComponent\n+        ref={modalRef}\n+        imageLink={setImageLink} />\n     </View>\n   )\n }\n export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645368198079,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,10 @@\n         <Icon name=\"camera-alt\" size={50} color={\"red\"} />\n       </TouchableOpacity>\n       <ModalComponent\n         ref={modalRef}\n-        imageLink={setImageLink} />\n+        imageLink={setImageLink}\n+        haha={()=>{alert('aaaa')}} />\n     </View>\n   )\n }\n export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645368255272,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n   }\n   const setImageLink = () => {\n     setImage()\n   }\n+  const haha=()=>{alert('aaaa')}\n   return (\n     <View style={{ backgroundColor: \"yellow\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n       <Image source={{ uri: image }} />\n       <TouchableOpacity onPress={pressBtn}>\n@@ -22,9 +23,9 @@\n       </TouchableOpacity>\n       <ModalComponent\n         ref={modalRef}\n         imageLink={setImageLink}\n-        haha={()=>{alert('aaaa')}} />\n+        haha={haha} />\n     </View>\n   )\n }\n export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645368564490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n       </TouchableOpacity>\n       <ModalComponent\n         ref={modalRef}\n         imageLink={setImageLink}\n-        haha={haha} />\n+        haha={haha()} />\n     </View>\n   )\n }\n export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645368584030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,9 @@\n       </TouchableOpacity>\n       <ModalComponent\n         ref={modalRef}\n         imageLink={setImageLink}\n-        haha={haha()} />\n+        haha={haha} />\n     </View>\n   )\n }\n export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645368839387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,11 @@\n       </TouchableOpacity>\n       <ModalComponent\n         ref={modalRef}\n         imageLink={setImageLink}\n-        haha={haha} />\n+        haha={() => {\n+          alert('dsadsad')\n+        }} />\n     </View>\n   )\n }\n export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645368845468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,8 @@\n   }\n   const setImageLink = () => {\n     setImage()\n   }\n-  const haha=()=>{alert('aaaa')}\n   return (\n     <View style={{ backgroundColor: \"yellow\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n       <Image source={{ uri: image }} />\n       <TouchableOpacity onPress={pressBtn}>\n"
+                },
+                {
+                    "date": 1645369027378,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     setImage()\n   }\n   return (\n     <View style={{ backgroundColor: \"yellow\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n-      <Image source={{ uri: image }} />\n+      <Image source={{ uri: image }} resizeMode=\"contain\" />\n       <TouchableOpacity onPress={pressBtn}>\n         <Icon name=\"camera-alt\" size={50} color={\"red\"} />\n       </TouchableOpacity>\n       <ModalComponent\n"
+                },
+                {
+                    "date": 1645369068184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     setImage()\n   }\n   return (\n     <View style={{ backgroundColor: \"yellow\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n-      <Image source={{ uri: image }} resizeMode=\"contain\" />\n+      <Image source={{ uri: image }} resizeMode=\"contain\" style={{flex: 1}}/>\n       <TouchableOpacity onPress={pressBtn}>\n         <Icon name=\"camera-alt\" size={50} color={\"red\"} />\n       </TouchableOpacity>\n       <ModalComponent\n"
+                },
+                {
+                    "date": 1645369184195,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     setImage()\n   }\n   return (\n     <View style={{ backgroundColor: \"yellow\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n-      <Image source={{ uri: image }} resizeMode=\"contain\" style={{flex: 1}}/>\n+      <Image source={{ uri: \"///data/user/0/com.cameraexample/cache/Camera/cd7055ef-a511-492c-ad0e-e7c0ea160c8d.jpg \"}} resizeMode=\"contain\" style={{flex: 1}}/>\n       <TouchableOpacity onPress={pressBtn}>\n         <Icon name=\"camera-alt\" size={50} color={\"red\"} />\n       </TouchableOpacity>\n       <ModalComponent\n"
+                },
+                {
+                    "date": 1645369264948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     setImage()\n   }\n   return (\n     <View style={{ backgroundColor: \"yellow\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n-      <Image source={{ uri: \"///data/user/0/com.cameraexample/cache/Camera/cd7055ef-a511-492c-ad0e-e7c0ea160c8d.jpg \"}} resizeMode=\"contain\" style={{flex: 1}}/>\n+      <Image source={{ uri: image}} resizeMode=\"contain\" style={{flex: 1}}/>\n       <TouchableOpacity onPress={pressBtn}>\n         <Icon name=\"camera-alt\" size={50} color={\"red\"} />\n       </TouchableOpacity>\n       <ModalComponent\n"
+                },
+                {
+                    "date": 1645369330888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,11 +22,10 @@\n       </TouchableOpacity>\n       <ModalComponent\n         ref={modalRef}\n         imageLink={setImageLink}\n-        haha={() => {\n-          alert('dsadsad')\n-        }} />\n+        \n+         />\n     </View>\n   )\n }\n export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645369364375,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     setImage()\n   }\n   return (\n     <View style={{ backgroundColor: \"yellow\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n-      <Image source={{ uri: image}} resizeMode=\"contain\" style={{flex: 1}}/>\n+      <Image source={{ uri: image}} resizeMode=\"contain\" style={{width: 400, height: 400}}/>\n       <TouchableOpacity onPress={pressBtn}>\n         <Icon name=\"camera-alt\" size={50} color={\"red\"} />\n       </TouchableOpacity>\n       <ModalComponent\n"
+                },
+                {
+                    "date": 1645527711073,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,10 @@\n   const modalRef = useRef()\n   const pressBtn = () => {\n     modalRef.current.onVisible()\n   }\n-  const setImageLink = () => {\n-    setImage()\n+  const setImageLink = (uri) => {\n+    setImageLink()\n   }\n   return (\n     <View style={{ backgroundColor: \"yellow\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n       <Image source={{ uri: image}} resizeMode=\"contain\" style={{width: 400, height: 400}}/>\n"
+                },
+                {
+                    "date": 1645527871695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   const pressBtn = () => {\n     modalRef.current.onVisible()\n   }\n   const setImageLink = (uri) => {\n-    setImageLink()\n+    setImageLink(uri)\n   }\n   return (\n     <View style={{ backgroundColor: \"yellow\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n       <Image source={{ uri: image}} resizeMode=\"contain\" style={{width: 400, height: 400}}/>\n"
+                },
+                {
+                    "date": 1645527947800,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   const pressBtn = () => {\n     modalRef.current.onVisible()\n   }\n   const setImageLink = (uri) => {\n-    setImageLink(uri)\n+    setImage(uri)\n   }\n   return (\n     <View style={{ backgroundColor: \"yellow\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n       <Image source={{ uri: image}} resizeMode=\"contain\" style={{width: 400, height: 400}}/>\n"
+                },
+                {
+                    "date": 1645528003912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     setImage(uri)\n   }\n   return (\n     <View style={{ backgroundColor: \"yellow\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n-      <Image source={{ uri: image}} resizeMode=\"contain\" style={{width: 400, height: 400}}/>\n+      <Image source={{ uri: image}} resizeMode=\"contain\" style={{flex:1}}/>\n       <TouchableOpacity onPress={pressBtn}>\n         <Icon name=\"camera-alt\" size={50} color={\"red\"} />\n       </TouchableOpacity>\n       <ModalComponent\n"
+                },
+                {
+                    "date": 1645528041288,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     setImage(uri)\n   }\n   return (\n     <View style={{ backgroundColor: \"yellow\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n-      <Image source={{ uri: image}} resizeMode=\"contain\" style={{flex:1}}/>\n+      <Image source={{ uri: image}} resizeMode=\"contain\" style={{width: \"100%\", height: 400}}/>\n       <TouchableOpacity onPress={pressBtn}>\n         <Icon name=\"camera-alt\" size={50} color={\"red\"} />\n       </TouchableOpacity>\n       <ModalComponent\n"
+                },
+                {
+                    "date": 1645528056015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     setImage(uri)\n   }\n   return (\n     <View style={{ backgroundColor: \"yellow\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n-      <Image source={{ uri: image}} resizeMode=\"contain\" style={{width: \"100%\", height: 400}}/>\n+      <Image source={{ uri: image}} resizeMode=\"contain\" style={{width: \"100%\", height: 900}}/>\n       <TouchableOpacity onPress={pressBtn}>\n         <Icon name=\"camera-alt\" size={50} color={\"red\"} />\n       </TouchableOpacity>\n       <ModalComponent\n"
+                },
+                {
+                    "date": 1645533299909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,12 @@\n import React, { useRef, useState } from \"react\"\n import { TouchableOpacity, View, Image } from \"react-native\"\n-\n+import {launchImageLibrary} from 'react-native-image-picker';\n import Icon from 'react-native-vector-icons/MaterialIcons';\n import ModalComponent from \"./ModalComponent\";\n \n const App = () => {\n-\n+  \n   const [image, setImage] = useState(null)\n   const modalRef = useRef()\n   const pressBtn = () => {\n     modalRef.current.onVisible()\n@@ -14,13 +14,20 @@\n   const setImageLink = (uri) => {\n     setImage(uri)\n   }\n   return (\n+\n     <View style={{ backgroundColor: \"yellow\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n-      <Image source={{ uri: image}} resizeMode=\"contain\" style={{width: \"100%\", height: 900}}/>\n+      <Image source={{ uri: image}} resizeMode=\"contain\" style={{width: \"100%\", height: 700}}/>\n+      <View style={{flexDirection: 'row'}}>\n       <TouchableOpacity onPress={pressBtn}>\n         <Icon name=\"camera-alt\" size={50} color={\"red\"} />\n       </TouchableOpacity>\n+      <TouchableOpacity onPress={clickLibrary}>\n+        <Icon name=\"library-add\" size={50} color={\"yellow\"} />\n+      </TouchableOpacity>\n+      </View>\n+      \n       <ModalComponent\n         ref={modalRef}\n         imageLink={setImageLink}\n         \n"
+                },
+                {
+                    "date": 1645533554949,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,38 +1,41 @@\n import React, { useRef, useState } from \"react\"\n import { TouchableOpacity, View, Image } from \"react-native\"\n-import {launchImageLibrary} from 'react-native-image-picker';\n+import { launchImageLibrary } from 'react-native-image-picker';\n import Icon from 'react-native-vector-icons/MaterialIcons';\n import ModalComponent from \"./ModalComponent\";\n \n const App = () => {\n-  \n+\n   const [image, setImage] = useState(null)\n   const modalRef = useRef()\n   const pressBtn = () => {\n     modalRef.current.onVisible()\n   }\n   const setImageLink = (uri) => {\n     setImage(uri)\n   }\n+  const clickLibrary = async () => {\n+     const result = await launchImageLibrary({mediaType:\"photo\", quality: 0.5})\n+  }\n   return (\n \n     <View style={{ backgroundColor: \"yellow\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n-      <Image source={{ uri: image}} resizeMode=\"contain\" style={{width: \"100%\", height: 700}}/>\n-      <View style={{flexDirection: 'row'}}>\n-      <TouchableOpacity onPress={pressBtn}>\n-        <Icon name=\"camera-alt\" size={50} color={\"red\"} />\n-      </TouchableOpacity>\n-      <TouchableOpacity onPress={clickLibrary}>\n-        <Icon name=\"library-add\" size={50} color={\"yellow\"} />\n-      </TouchableOpacity>\n+      <Image source={{ uri: image }} resizeMode=\"contain\" style={{ width: \"100%\", height: 700 }} />\n+      <View style={{ flexDirection: 'row' }}>\n+        <TouchableOpacity onPress={pressBtn}>\n+          <Icon name=\"camera-alt\" size={50} color={\"red\"} />\n+        </TouchableOpacity>\n+        <TouchableOpacity onPress={clickLibrary}>\n+          <Icon name=\"library-add\" size={50} color={\"yellow\"} />\n+        </TouchableOpacity>\n       </View>\n-      \n+\n       <ModalComponent\n         ref={modalRef}\n         imageLink={setImageLink}\n-        \n-         />\n+\n+      />\n     </View>\n   )\n }\n export default App\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1645533644028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         <TouchableOpacity onPress={pressBtn}>\n           <Icon name=\"camera-alt\" size={50} color={\"red\"} />\n         </TouchableOpacity>\n         <TouchableOpacity onPress={clickLibrary}>\n-          <Icon name=\"library-add\" size={50} color={\"yellow\"} />\n+          <Icon name=\"library-add\" size={50} color={\"green\"} />\n         </TouchableOpacity>\n       </View>\n \n       <ModalComponent\n"
+                },
+                {
+                    "date": 1645534102167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,10 @@\n     setImage(uri)\n   }\n   const clickLibrary = async () => {\n      const result = await launchImageLibrary({mediaType:\"photo\", quality: 0.5})\n+\n+     console.log(JSON.stringify(result))\n   }\n   return (\n \n     <View style={{ backgroundColor: \"yellow\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n"
+                },
+                {
+                    "date": 1645534221818,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n     setImage(uri)\n   }\n   const clickLibrary = async () => {\n      const result = await launchImageLibrary({mediaType:\"photo\", quality: 0.5})\n-\n+     setImage(result.assets[0].uri)\n      console.log(JSON.stringify(result))\n   }\n   return (\n \n"
+                },
+                {
+                    "date": 1645534267520,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n   return (\n \n     <View style={{ backgroundColor: \"yellow\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n       <Image source={{ uri: image }} resizeMode=\"contain\" style={{ width: \"100%\", height: 700 }} />\n-      <View style={{ flexDirection: 'row' }}>\n+      <View style={{ flexDirection: 'row', justifyContent: 'space-evenly' }}>\n         <TouchableOpacity onPress={pressBtn}>\n           <Icon name=\"camera-alt\" size={50} color={\"red\"} />\n         </TouchableOpacity>\n         <TouchableOpacity onPress={clickLibrary}>\n"
+                },
+                {
+                    "date": 1645534296204,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,9 +22,9 @@\n   return (\n \n     <View style={{ backgroundColor: \"yellow\", flex: 1, justifyContent: 'center', alignItems: 'center' }}>\n       <Image source={{ uri: image }} resizeMode=\"contain\" style={{ width: \"100%\", height: 700 }} />\n-      <View style={{ flexDirection: 'row', justifyContent: 'space-evenly' }}>\n+      <View style={{ flexDirection: 'row', justifyContent: 'space-evenly' , width: '100%'}}>\n         <TouchableOpacity onPress={pressBtn}>\n           <Icon name=\"camera-alt\" size={50} color={\"red\"} />\n         </TouchableOpacity>\n         <TouchableOpacity onPress={clickLibrary}>\n"
+                }
+            ],
+            "date": 1645348009568,
+            "name": "Commit-0",
+            "content": "import React from \"react\"\nimport { View } from \"react-native\"\n\nconst App=()=>{\n  return(\n<View style={{backgroundColor: \"red\"}}>\n\n</View>\n  )\n}\nexport default App"
+        }
+    ]
+}
